@@ -1,5 +1,10 @@
+<header>
+  <h1>ZuboL</h1>
+</header>
+
+
 <ul>
   <% @posts.each do |post| %>
-  <li><%= post.title %></li>
+  <li><%= link_to post.title, post_path(post) %></li>
   <% end %>
 </ul>
