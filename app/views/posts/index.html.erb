@@ -1,11 +1,20 @@
 
-<header class="container">
-  <div class="row">
-    <div class="col-sm-4">ZuboLand</div>
-    <div class="col-sm-4">ZuboLand</div>
-    <div class="col-sm-4">ZuboLand</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="posts_path">ZuboLand</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navigation">
+      <p class="navbar-text navbar-right">About</p>
+      <p class="navbar-text navbar-right">新規登録</p>
+    </div>
   </div>
-</header>
+</nav>
 
 <ul>
   <% @posts.each do |post| %>
